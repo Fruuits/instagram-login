@@ -1,0 +1,233 @@
+ @import url('https://fonts.googleapis.com/css?family=Sen|Vollkorn&display=swap');
+ @import url('reset.css');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+ /*font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+ /* TO DO 
+1: Padding in input
+2: Wrap Inputs into a form elements 
+3: Move all code above media queries expect if require for that screen size
+4: add dashes between all class name more then one word
+5: Font-sizes in ems not inches
+6: Use css to uppcase text
+7: DRY = Don't Repeat Yourself, (Same code but with less code) 
+8: Add border box code from Paul Irish (Look into it) 
+*/
+
+
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ html {
+     box-sizing: border-box;
+ }
+
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+
+ body {
+     background-color: #FAFAFA;
+ }
+
+ /* TYPOGRAPHY STYLES */
+
+ h1 {
+     font-size: 4em;
+     font-family: 'Lobster', cursive;
+     margin-top: 0.5em;
+     margin-bottom: 0.8em
+ }
+
+ h2 {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-size: 1.3em;
+     font-weight: bolder;
+     margin-top: 1.5em;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ p {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ i {
+     color: darkblue;
+     font-size: 1.5em;
+     padding: 0.9em;
+ }
+
+ a {
+     text-decoration-line: none;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: lighter;
+     color: black;
+ }
+
+ /* CONTAINER */
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+ }
+
+
+ form {
+     text-align: center;
+ }
+
+ input {
+     width: 90%;
+     min-height: 4vh;
+     margin: 1em;
+     padding-left: 0.3em;
+ }
+
+ ::placeholder {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 12px;
+ }
+
+ .login-button {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ button {
+     width: 90%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1.2em;
+     color: white;
+     min-height: 4vh;
+     margin-top: 0.5em;
+     background: dodgerblue;
+     font-weight: bolder;
+     font-family: 'Montserrat', sans-serif;
+     border: solid black 1.3px
+ }
+
+ button:hover {
+     cursor: pointer;
+ }
+
+ .sign-up-instead {
+     font-size: 1.2em;
+     color: gray;
+     font-weight: bolder;
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 1.5em;
+ }
+
+ .fb-login {
+     font-family: 'Montserrat', sans-serif;
+     margin-left: 0.2em;
+ }
+
+ .password {
+     margin-top: 1em;
+     margin-bottom: 2em;
+     font-size: 1.2em;
+ }
+
+ .sign-up-div {
+     display: flex;
+     width: 72.5%;
+     min-height: 7vh;
+     margin-top: 2em;
+     padding: 0.5em;
+ }
+
+ .sign-up {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.1em;
+     font-family: 'Montserrat', sans-serif;
+     width: 100%;
+
+ }
+
+ .sign-up-div a {
+     text-decoration-line: none;
+     margin-left: 0.3em;
+     font-family: 'Montserrat', sans-serif;
+     color: dodgerblue;
+     font-weight: bolder;
+
+ }
+
+ .sign-up-div a:hover {
+     text-decoration-line: underline;
+ }
+
+ .get-app-div {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .apps {
+     margin-top: 2em;
+     letter-spacing: 0.5em;
+ }
+
+ /* FOOTER */
+
+ .footer {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 1em;
+     text-align: center;
+     padding: 1em;
+ }
+
+ .footer-top-row,
+ .footer-bottom-row {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ ul {
+
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 100%;
+     list-style: none;
+ }
+
+ li {
+     text-transform: uppercase;
+     padding: 0.5em;
+     min-height: 1vh;
+     text-align: center;
+ }
+
+ .copyright {
+     display: flex;
+     justify-content: center;
+     color: gray;
+     font-weight: bolder;
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 2em;
+     min-height: 5vh;
+ }
